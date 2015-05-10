@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.1_chef-provisionerless.box"
   config.vm.network :private_network, ip: "192.168.33.51"
 
-  config.vm.network :forwarded_port, guest: 8000, host: 8000
+  config.vm.network :forwarded_port, guest: 8000, host: 8001
 
   # this solves slow network issue
   # @see https://github.com/mitchellh/vagrant/issues/1172
